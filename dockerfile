@@ -3,8 +3,8 @@ FROM ubuntu
 RUN apt-get update -qq
 RUN apt-get install python3-pip -qq
 RUN pip3 --version
-ADD . /simpleApp
-WORKDIR /simpleApp
+ADD . /py_App
+WORKDIR /py_App
 COPY . .
 RUN apt-get update -qq
 EXPOSE 8000
